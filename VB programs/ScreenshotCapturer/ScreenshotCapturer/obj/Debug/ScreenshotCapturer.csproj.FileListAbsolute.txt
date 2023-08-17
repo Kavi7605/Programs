@@ -1,0 +1,10 @@
+C:\Kavi\College\Programs\VB programs\ScreenshotCapturer\ScreenshotCapturer\bin\Debug\ScreenshotCapturer.exe.config
+C:\Kavi\College\Programs\VB programs\ScreenshotCapturer\ScreenshotCapturer\bin\Debug\ScreenshotCapturer.exe
+C:\Kavi\College\Programs\VB programs\ScreenshotCapturer\ScreenshotCapturer\bin\Debug\ScreenshotCapturer.pdb
+C:\Kavi\College\Programs\VB programs\ScreenshotCapturer\ScreenshotCapturer\obj\Debug\ScreenshotCapturer.csproj.AssemblyReference.cache
+C:\Kavi\College\Programs\VB programs\ScreenshotCapturer\ScreenshotCapturer\obj\Debug\ScreenshotCapturer.Form1.resources
+C:\Kavi\College\Programs\VB programs\ScreenshotCapturer\ScreenshotCapturer\obj\Debug\ScreenshotCapturer.Properties.Resources.resources
+C:\Kavi\College\Programs\VB programs\ScreenshotCapturer\ScreenshotCapturer\obj\Debug\ScreenshotCapturer.csproj.GenerateResource.cache
+C:\Kavi\College\Programs\VB programs\ScreenshotCapturer\ScreenshotCapturer\obj\Debug\ScreenshotCapturer.csproj.CoreCompileInputs.cache
+C:\Kavi\College\Programs\VB programs\ScreenshotCapturer\ScreenshotCapturer\obj\Debug\ScreenshotCapturer.exe
+C:\Kavi\College\Programs\VB programs\ScreenshotCapturer\ScreenshotCapturer\obj\Debug\ScreenshotCapturer.pdb

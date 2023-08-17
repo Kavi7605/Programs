@@ -1,0 +1,10 @@
+C:\Kavi\College\Programs\VB programs\NameGenerator\NameGenerator\bin\Debug\NameGenerator.exe.config
+C:\Kavi\College\Programs\VB programs\NameGenerator\NameGenerator\bin\Debug\NameGenerator.exe
+C:\Kavi\College\Programs\VB programs\NameGenerator\NameGenerator\bin\Debug\NameGenerator.pdb
+C:\Kavi\College\Programs\VB programs\NameGenerator\NameGenerator\obj\Debug\NameGenerator.csproj.AssemblyReference.cache
+C:\Kavi\College\Programs\VB programs\NameGenerator\NameGenerator\obj\Debug\NameGenerator.Form1.resources
+C:\Kavi\College\Programs\VB programs\NameGenerator\NameGenerator\obj\Debug\NameGenerator.Properties.Resources.resources
+C:\Kavi\College\Programs\VB programs\NameGenerator\NameGenerator\obj\Debug\NameGenerator.csproj.GenerateResource.cache
+C:\Kavi\College\Programs\VB programs\NameGenerator\NameGenerator\obj\Debug\NameGenerator.csproj.CoreCompileInputs.cache
+C:\Kavi\College\Programs\VB programs\NameGenerator\NameGenerator\obj\Debug\NameGenerator.exe
+C:\Kavi\College\Programs\VB programs\NameGenerator\NameGenerator\obj\Debug\NameGenerator.pdb

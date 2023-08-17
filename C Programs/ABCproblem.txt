@@ -1,0 +1,73 @@
+if A>B
+	if B>C 
+		if C=A
+		else ifC<A
+		else C>A
+ 	else if B<C
+		if C=A
+		else if C<A
+		else C>A
+ 	else B=C
+		C=A
+		C<A
+		C>A
+
+if A<B
+	if B>C 
+		if C=A
+		else ifC<A
+		else C>A
+ 	else if B<C
+		if C=A
+		else if C<A
+		else C>A
+ 	else B=C
+		C=A
+		C<A
+		C>A
+
+ifA=B
+	if B>C 
+		if C=A
+		else ifC<A
+		else C>A
+ 	else if B<C
+		if C=A
+		else if C<A
+		else C>A
+ 	else B=C
+		C=A
+		C<A
+		C>A
+
+
+
+A>B>C>A
+A>B>C<A
+A>B>C=A
+A>B<C>A
+A>B<C<A
+A>B<C=A
+A>B=C>A
+A>B=C<A
+A>B=C=A
+
+A<B>C>A
+A<B>C<A
+A<B>C=A
+A<B<C>A
+A<B<C<A
+A<B<C=A
+A<B=C>A
+A<B=C<A
+A<B=C=A
+
+A=B>C>A
+A=B>C<A
+A=B>C=A
+A=B<C>A
+A=B<C<A
+A=B<C=A
+A=B=C>A
+A=B=C<A
+A=B=C=A

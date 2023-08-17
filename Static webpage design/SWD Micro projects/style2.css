@@ -1,0 +1,209 @@
+
+ html {
+    scroll-behavior:smooth;
+   }
+
+   a {
+    text-decoration: none;
+    color: black;
+   }
+
+#banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.26),#cfa9bc), url(images/banner.jpg) ;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.logo{
+    width: 140px;
+    position: absolute;
+    top: 4%;
+    left: 10%;
+}
+
+.banner-text{
+    text-align: center;
+    color: #fff;
+    padding-top: 200px;
+}
+
+.banner-text h1{
+    font-size: 130px;
+    font-family: Gabriola;
+}
+
+.banner-text p{
+    font-size: 20px;
+    font-style: italic;
+}
+
+.banner-btn{
+    margin: 70px auto 0;
+}
+
+.banner-btn a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: #fff;
+    border: .5px solid #fff;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+}
+
+.banner-btn a span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.banner-btn a:hover span{
+    width: 100%;
+}
+
+.banner-btn a:hover{
+    color: #000;
+}
+
+#map{
+    width: 100%;
+    padding: 70px 0;
+    height: 100vh;
+}
+
+.title-text{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.title-text p{
+    margin : auto;
+    font-size: 37px;
+    color: #009688;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+.title-text h1{
+    font-size: 50px;
+}
+
+.title-text p::after
+{
+    content:'';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#009688,#cfa9bc);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index:-1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.maps-img{
+    flex-basis: 50%;
+    margin-left: 23%;
+    margin-right: auto;
+
+}
+.maps-img img{
+    width: 70%;
+    border-radius: 10px;
+
+}
+
+#Overview{
+    width: 100%;
+    padding: 70px 0;
+    background: #efefef;
+}
+
+.overview-box{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.single-service{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+}
+.single-service img{
+    width: 100%;
+    border-radius: 7px;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.5),#cfa9bc);
+    opacity: 0;
+    transition: 1s;
+
+}
+.single-service:hover .overlay {
+    opacity: 1;
+
+}
+
+.service-desc{
+    color: black;
+    width: 80%;
+    position:absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+}
+
+#topography{
+    width: 100%;
+    padding : 70px 0;
+
+}
+
+.feature-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.features {
+    flex-basis: 50%;
+
+}
+.features-img{
+    flex-basis: 50%;
+    margin: auto;
+}
+
+.features-img img{
+    width: 70%;
+    border-radius: 10px;
+
+}

@@ -1,0 +1,10 @@
+C:\Kavi\College\Programs\VB programs\Inward Outward\Inward Outward\bin\Debug\Inward Outward.exe.config
+C:\Kavi\College\Programs\VB programs\Inward Outward\Inward Outward\bin\Debug\Inward Outward.exe
+C:\Kavi\College\Programs\VB programs\Inward Outward\Inward Outward\bin\Debug\Inward Outward.pdb
+C:\Kavi\College\Programs\VB programs\Inward Outward\Inward Outward\obj\Debug\Inward Outward.csproj.AssemblyReference.cache
+C:\Kavi\College\Programs\VB programs\Inward Outward\Inward Outward\obj\Debug\Inward_Outward.Form1.resources
+C:\Kavi\College\Programs\VB programs\Inward Outward\Inward Outward\obj\Debug\Inward_Outward.Properties.Resources.resources
+C:\Kavi\College\Programs\VB programs\Inward Outward\Inward Outward\obj\Debug\Inward Outward.csproj.GenerateResource.cache
+C:\Kavi\College\Programs\VB programs\Inward Outward\Inward Outward\obj\Debug\Inward Outward.csproj.CoreCompileInputs.cache
+C:\Kavi\College\Programs\VB programs\Inward Outward\Inward Outward\obj\Debug\Inward Outward.exe
+C:\Kavi\College\Programs\VB programs\Inward Outward\Inward Outward\obj\Debug\Inward Outward.pdb

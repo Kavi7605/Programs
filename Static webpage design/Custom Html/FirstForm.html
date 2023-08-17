@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="This is an HTML , Lol">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First Form</title>
+  <style>
+  a:link, a:visited {
+    background-color: #cecece;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-style: ridge;
+    }
+
+  a:hover, a:active {
+    background-color: Black;
+  }
+  </style>
+  <!--<link rel="stylesheet" href="Style.css">-->
+</head>
+<body>
+
+  <h1>Registration Form</h1>
+  <hr/>
+  <form>
+
+    <br>
+    First Name: <input type="text" placeholder="Enter your first name" required>
+    Last Name: <input type="text" placeholder="Enter your last name" required><br><br>
+    Password: <input type="password" placeholder="Enter Password" required><br><br>
+    Birthdate: <input type="date" required>
+    Phone no.: <input type="text" placeholder="Enter Phone number" required><br><br>
+    Email: <input type="email" placeholder="Your email" required><br><br>
+
+    <input type="range"><br><br>
+
+    Hobbies: <input type="checkbox" name="Hobby">Anime
+    <input type="checkbox" name="Hobby">Gaming<br><br>
+
+    Select Gender: <input type="radio" name="Gender" required>Male
+    <input type="radio" name="Gender" required>Female<br><br>
+
+    Description: <textarea rows="10" cols="30"></textarea><br><br>
+
+    <input type="file"><br><br>
+
+    Select your favorite coding language:
+    <select name="languages" id="">
+     <option value="javascript">javascript</option>
+     <option value="java">java</option>
+     <option value="python">python</option>
+    </select>
+    <br>
+    <label for="Number">Number:</label>
+    <input type="number" name="number" step="1">
+    <br><br><br><br>
+    <button type="submit" value="Submit">Submit</button>
+    <a href="Main File.html">Go back</a>
+    <br><br>
+    <hr>
+    <form action="submission.html" method="POST">
+      <h1>Create a burger!</h1>
+        <section class="protein">
+        <label for="patty">What type of protein would you like?</label>
+        <input type="text" name="patty" id="patty">
+      </section>
+      <hr>
+      <section class="patties">
+        <label for="amount">How many patties would you like?</label>
+        <input type="number" name="amount" id="amount">
+      </section>
+      <hr>
+      <section class="cooked">
+        <label for="doneness">How do you want your patty cooked</label>
+        <br>
+        <span>Rare</span>
+        <input type="range" name="doneness" id="doneness" value="3" min="1" max="5">
+        <span>Well-Done</span>
+      </section>
+      <hr>
+      <section class="toppings">
+        <span>What toppings would you like?</span>
+        <br>
+        <input type="checkbox" name="topping" id="lettuce" value="lettuce">
+        <label for="lettuce">Lettuce</label>
+        <input type="checkbox" name="topping" id="tomato" value="tomato">
+        <label for="tomato">Tomato</label>
+        <input type="checkbox" name="topping" id="onion" value="onion">
+        <label for="onion">Onion</label>
+      </section>
+      <hr>
+      <section class="cheesy">
+        <span>Would you like to add cheese?</span>
+        <br>
+        <input type="radio" name="cheese" id="yes" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" name="cheese" id="no" value="yes">
+        <label for="no">No</label>
+      </section>
+      <hr>
+      <section class="bun-type">
+        <label for="bun">What type of bun would you like?</label>
+        <select name="bun" id="bun">
+          <option value="sesame">Sesame</option>
+          <option value="potatoe">Potato</option>
+          <option value="pretzel">Pretzel</option>
+        </select>
+      </section>
+      <hr>
+      <section class="sauce-selection">
+        <label for="sauce">What type of sauce would you like?</label>
+        <input list="sauces" id="sauce" name="sauce">
+        <datalist id="sauces">
+          <option value="ketchup"></option>
+          <option value="mayo"></option>
+          <option value="mustard"></option>
+        </datalist>
+      </section>
+      <hr>
+      <section class="extra-info">
+        <label for="extra">Anything else you want to add?</label>
+        <br>
+        <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+      </section>
+      <hr>
+
+      <section class="submission">
+        <!--Add your code below-->
+        <input type="submit" value="Submit">
+      </section>
+
+    </form>
+  </form>
+</body>
+</html>

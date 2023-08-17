@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>assignnmet 10</title>
+  </head>
+  <body>
+    <h1 style="text-align: center;">Bank Account Opening form</h1>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<big>Account Type:-</big><br>
+    <select class="Account Type">
+      <option>Current Account</option>
+      <option>Saving Account</option>
+      <option>Personal Account</option>
+    </select>
+    <br><br>
+    <form>
+      &nbsp;&nbsp;<label for="fname"><big>First Name:-</big></label>
+      <input type="text" name="fname" placeholder="Enter your first name" required>
+      <br><br>
+      &nbsp;&nbsp;<label for="lname"><big>Last Name:-</big></label>
+      <input type="text" name="lname" placeholder="Enter your last name" required>
+      <br><br>
+      &nbsp;&nbsp;<label for="phonenum"><big>Phone Number:-</big></label>
+      <input type="text" name="phonenum" placeholder="phone no." required>
+      <br><br>
+      &nbsp;&nbsp;<label><big>Monthly Salary:-</big></label>
+      <select name="Monthlysalary">
+        <option>below 10,000</option>
+        <option>10,00 to 20,000</option>
+        <option>20,000 to 30,000</option>
+        <option>30,000 to 40,000</option>
+        <option>above 50,000</option>
+      </select>
+      <br><br>
+      &nbsp;&nbsp;<label><big>Address:-</big></label><br>
+      <textarea name="Address" rows="2" cols="50" style="border-style: solid;border-width:2px" placeholder="Permanent Address" required></textarea><br>
+      <textarea name="Address" rows="2" cols="50" style="border-style: solid;border-width:2px" placeholder="Address Line 2"></textarea>
+      <br><br>
+
+      &nbsp;&nbsp;<label for="City" required><big>City:-</big></label>
+      <input type="text" name="City">
+      <br><br>
+      &nbsp;&nbsp;<label for="Region"><big>Region:-</big></label>
+      <input type="text" name="Region">
+      <br><br>
+      &nbsp;&nbsp;<label for="postalcode"><big>Postal Code:-</big></label>
+      <input type="text" name="postalcode">
+      <br><br>
+      &nbsp;&nbsp;<label for="idproof"><big>Identity Proof:-</big></label>
+      <select name="idproof">
+        <option>Adhaar card</option>
+        <option>Pan card</option>
+        <option>Driving Licence</option>
+        <option>Passport</option>
+        <option>Election card</option>
+      </select>
+      <br><br>
+      &nbsp;&nbsp;<label for="sig"><big>Signature of Applicant:-</big></label>
+      <input type="file"><br><br>
+      <br><br>
+
+
+
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
