@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Blog Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+        header nav a:hover {
+            background: #575757;
+        }
+        main {
+            display: flex;
+            justify-content: space-between;
+        }
+        article {
+            flex: 3;
+            margin-right: 20px;
+        }
+        aside {
+            flex: 1;
+            background: #f9f9f9;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .post-date {
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Travel Blog</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Blog</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main>
+            <article>
+                <h2>Exploring the Beauty of Paris</h2>
+                <p class="post-date">Posted on July 29, 2024</p>
+                <p>Paris, the capital city of France, is one of the most popular travel destinations in the world. Known for its rich history, stunning architecture, and vibrant culture, Paris offers an unforgettable experience for every traveler. Whether you're strolling along the Seine River, visiting iconic landmarks, or enjoying the exquisite cuisine, Paris has something for everyone.</p>
+                <h3>Top Attractions in Paris</h3>
+                <p>The Eiffel Tower is one of the most recognizable structures in the world. A visit to Paris wouldn't be complete without admiring this iron lattice tower, which offers breathtaking views of the city from its observation decks.</p>
+                <p>The Louvre Museum is the world's largest art museum and a historic monument in Paris. It is home to thousands of works of art, including the famous Mona Lisa and the Venus de Milo.</p>
+                <p>The Notre-Dame Cathedral is a masterpiece of French Gothic architecture. Despite the fire in 2019, it remains a symbol of Paris and an architectural marvel that attracts millions of visitors each year.</p>
+            </article>
+
+            <aside>
+                <h2>Related Posts</h2>
+                <ul>
+                    <li><a href="#">A Weekend in Rome</a></li>
+                    <li><a href="#">Top 10 Attractions in London</a></li>
+                    <li><a href="#">Discovering Tokyo</a></li>
+                    <li><a href="#">The Best of New York City</a></li>
+                </ul>
+            </aside>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Travel Blog</p>
+    </footer>
+</body>
+</html>

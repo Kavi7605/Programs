@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling Page</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .parallax {
+            background-image: url('background1.jpg');
+            height: 100%;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .content {
+            height: 100%;
+            background: rgba(255, 255, 255, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .section {
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parallax"></div>
+    <div class="content">
+        <div class="section">
+            <h1>Welcome to My Parallax Page</h1>
+            <p>Scroll down to see the effect!</p>
+        </div>
+    </div>
+    <div class="parallax" style="background-image: url('background2.jpg');"></div>
+    <div class="content">
+        <div class="section">
+            <h1>Another Section</h1>
+            <p>Isn't this cool?</p>
+        </div>
+    </div>
+    <div class="parallax" style="background-image: url('background3.jpg');"></div>
+    <div class="content">
+        <div class="section">
+            <h1>Final Section</h1>
+            <p>Thanks for scrolling!</p>
+        </div>
+    </div>
+</body>
+</html>

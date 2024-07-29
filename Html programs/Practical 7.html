@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .section {
+            flex: 1 1 calc(33.333% - 40px);
+            margin: 10px;
+            background: #f4f4f4;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Name</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="section">Project 1</div>
+        <div class="section">Project 2</div>
+        <div class="section">Project 3</div>
+        <div class="section">Project 4</div>
+        <div class="section">Project 5</div>
+        <div class="section">Project 6</div>
+    </div>
+    <footer>
+        <p>Contact: email@example.com</p>
+    </footer>
+</body>
+</html>

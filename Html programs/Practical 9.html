@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Animation Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: #f0f8ff;
+        }
+        .button {
+            padding: 10px 20px;
+            background: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #2980b9;
+        }
+        .animate-box {
+            width: 100px;
+            height: 100px;
+            background: #e74c3c;
+            position: relative;
+            animation: moveBox 5s infinite;
+        }
+        @keyframes moveBox {
+            0% { left: 0; }
+            50% { left: calc(100% - 100px); }
+            100% { left: 0; }
+        }
+    </style>
+</head>
+<body>
+    <button class="button">Hover over me</button>
+    <div class="animate-box"></div>
+</body>
+</html>
