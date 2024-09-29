@@ -3,25 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Box Model Demonstration</title>
-    <style>
-        .box {
-            width: 200px;
-            padding: 20px;
-            border: 5px solid #3498db;
-            margin: 20px;
-            background-color: #ecf0f1;
-        }
-        .container {
-            padding: 20px;
-        }
-    </style>
+    <title>CSS Box Model Demonstration</title>
+    <link rel="stylesheet" href="Practical 6.css"> 
 </head>
 <body>
-    <div class="container">
+    <div class="margin-area">
+        <div class="margin-label">Margin</div>
         <div class="box">
-            This box demonstrates the CSS box model.
+            <div class="border-label">Border</div>
+            <p class="box-content">This is the content of the box.</p>
+            <div class="padding-label">Padding</div>
+            <p class="explanation">The box model includes margin (green), border (blue), and padding (orange).</p>
         </div>
     </div>
+
 </body>
 </html>

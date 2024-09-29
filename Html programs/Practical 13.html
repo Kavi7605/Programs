@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="Practical 13.css">
+</head>
+<body>
+
+    <h1>Student Management System</h1>
+    <div id="form-container">
+        <input type="hidden" id="studentIndex">
+        <label for="studentName">Name:</label>
+        <input type="text" id="studentName" placeholder="Enter student name" required>
+        <label for="studentAge">Age:</label>
+        <input type="number" id="studentAge" placeholder="Enter student age" required>
+        <label for="studentGrade">Grade:</label>
+        <input type="text" id="studentGrade" placeholder="Enter student grade" required>
+        <button onclick="addOrEditStudent()">Submit</button>
+    </div>
+
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Grade</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script src="Practical 13.js"></script>
+
+</body>
+</html>
