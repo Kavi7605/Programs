@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form with Validation</title>
+    <link rel="stylesheet" href="Practical 14.css">
+</head>
+<body>
+
+    <h1>Registration Form</h1>
+
+    <div class="form-container">
+        <form id="registrationForm" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <small class="error-message" id="nameError"></small>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <small class="error-message" id="emailError"></small>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+            <small class="error-message" id="passwordError"></small>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+            <small class="error-message" id="confirmPasswordError"></small>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <script src="Practical 14.js"></script>
+
+</body>
+</html>
