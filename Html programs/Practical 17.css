@@ -1,0 +1,93 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 70%;
+    border: 2px solid #3498db;
+    border-radius: 6px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.profile-section {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.profile-section img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin: 0 auto;
+}
+
+.profile-info {
+    margin-top: 20px;
+}
+
+.profile-info h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.profile-info p {
+    text-align: center;
+    color: #7f8c8d;
+}
+
+.repo-list {
+    margin-top: 20px;
+}
+
+.repo-list h3 {
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.repo-item {
+    padding: 10px;
+    background-color: #ecf0f1;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}

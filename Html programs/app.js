@@ -1,89 +1,77 @@
-let students = [];
-let editingIndex = null;
+const API_KEY = 'cf9651afab0c054059311c2ce8b9e892';  
+const BASE_URL = 'https://api.openweathermap.org/data/2.5/';
 
-// Function to add or update a student
-function addStudent(name, age, grade, semester, address, gender, hobbies) {
-    const student = { name, age, grade, semester, address, gender, hobbies };
-    students.push(student);
-}
-
-// Function to display students in the table
-function displayStudents() {
-    const tableBody = document.getElementById("studentTableBody");
-    tableBody.innerHTML = ""; // Clear the table body
-
-    students.forEach((student, index) => {
-        const hobbiesList = student.hobbies.join(", ");
-        const row = `
-            <tr>
-                <td>${student.name}</td>
-                <td>${student.age}</td>
-                <td>${student.grade}</td>
-                <td>${student.semester}</td>
-                <td>${student.address}</td>
-                <td>${student.gender}</td>
-                <td>${hobbiesList}</td>
-                <td>
-                    <button class="btn btn-warning btn-sm" onclick="editStudent(${index})">Edit</button>
-                    <button class="btn btn-danger btn-sm" onclick="deleteStudent(${index})">Delete</button>
-                </td>
-            </tr>
-        `;
-        tableBody.innerHTML += row;
-    });
-}
-
-// Handle form submission
-document.getElementById("studentForm").addEventListener("submit", function (event) {
-    event.preventDefault();
-
-    const name = document.getElementById("name").value;
-    const age = document.getElementById("age").value;
-    const grade = document.getElementById("grade").value;
-    const semester = document.getElementById("semester").value;
-    const address = document.getElementById("address").value;
-    
-    const gender= document.getElementById("gender").value;
-
-    const hobbies = [];
-    document.querySelectorAll('input[name="hobbies"]:checked').forEach((checkbox) => {
-        hobbies.push(checkbox.value);
-    });
-
-    if (editingIndex !== null) {
-        students[editingIndex] = { name, age, grade, semester, address, gender, hobbies };
-        editingIndex = null;
-    } else {
-        addStudent(name, age, grade, semester, address, gender, hobbies);
+async function getWeather() {
+    const city = document.getElementById('cityInput').value.trim();
+    if (!city) {
+        alert('Please enter a city name.');
+        return;
     }
 
-    displayStudents();
+    try {
+        const weatherResponse = await fetch(`${BASE_URL}weather?q=${city}&appid=${API_KEY}&units=metric`);
+        if (!weatherResponse.ok) {
+            if (weatherResponse.status === 404) {
+                throw new Error('City not found. Please check the city name.');
+            }
+            throw new Error('Network response was not ok');
+        }
+        const weatherData = await weatherResponse.json();
+        displayCurrentWeather(weatherData);
+        displayMap(weatherData.coord.lat, weatherData.coord.lon); 
 
-    // Reset form fields
-    document.getElementById("studentForm").reset();
-});
+        const forecastResponse = await fetch(`${BASE_URL}forecast?q=${city}&appid=${API_KEY}&units=metric`);
+        if (!forecastResponse.ok) {
+            throw new Error('Network response was not ok');
+        }
+        const forecastData = await forecastResponse.json();
+        displayForecast(forecastData);
 
-// Function to edit a student
-function editStudent(index) {
-    const student = students[index];
-    document.getElementById("name").value = student.name;
-    document.getElementById("age").value = student.age;
-    document.getElementById("grade").value = student.grade;
-    document.getElementById("semester").value = student.semester;
-    document.getElementById("address").value = student.address;
-    document.getElementById("gender").value = student.gender;
-
-    // Reset hobbies checkboxes and set according to the selected student
-    document.querySelectorAll('input[name="hobbies"]').forEach((checkbox) => {
-        checkbox.checked = student.hobbies.includes(checkbox.value);
-    });
-
-    document.querySelector("button[type=submit]").innerText = "Save";
-    editingIndex = index;
+    } catch (error) {
+        console.error('Error fetching data:', error);
+        alert('Failed to fetch weather data: ' + error.message);
+    }
 }
 
-// Function to delete a student
-function deleteStudent(index) {
-    students.splice(index, 1); // Remove student from array
-    displayStudents(); // Refresh the table
+function displayCurrentWeather(data) {
+    const weatherBody = document.getElementById('weatherBody');
+    weatherBody.innerHTML = `
+        <tr>
+            <td>${data.name}, ${data.sys.country}</td>
+            <td>${data.main.temp}°C</td>
+            <td>${data.weather[0].description}</td>
+            <td>${data.sys.country}</td>
+            <td><img src="http://openweathermap.org/img/wn/${data.weather[0].icon}.png" alt="${data.weather[0].description} icon" /></td>
+        </tr>
+    `;
+}
+
+function displayForecast(data) {
+    const forecastBody = document.getElementById('forecastBody');
+    forecastBody.innerHTML = '';
+
+    const dailyForecasts = data.list.filter(item => item.dt_txt.includes('12:00:00'));
+    dailyForecasts.forEach(forecast => {
+        const date = new Date(forecast.dt_txt).toLocaleDateString();
+        forecastBody.innerHTML += `
+            <tr>
+                <td>${date}</td>
+                <td>${forecast.main.temp}°C</td>
+                <td>${forecast.weather[0].description}</td>
+                <td><img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}.png" alt="${forecast.weather[0].description} icon" /></td>
+            </tr>
+        `;
+    });
+}
+
+function displayMap(lat, lon) {
+    const map = L.map('map').setView([lat, lon], 13);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '© OpenStreetMap'
+    }).addTo(map);
+    
+    L.marker([lat, lon]).addTo(map)
+        .bindPopup('City Location')
+        .openPopup();
 }
